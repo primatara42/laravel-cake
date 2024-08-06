@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <div className="flex justify-between bg-primary text-white p-5 text-lg md:text-base w-full">
+    <div className="flex justify-between bg-primary text-white p-5 text-lg md:text-base w-full fixed">
       <div className="">
         <img src={HeaderLogo} alt="Laravel Cake" />
       </div>
