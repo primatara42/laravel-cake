@@ -3,41 +3,74 @@ import JumbotronImage from "../assets/images/jumbotron_image(1).png";
 import { FaArrowRight } from "react-icons/fa";
 const Jumbotron = () => {
   return (
-    <div className="w-full h-[100vh] py-80 bg-primary flex justify-between items-center text-white md:block md:py-24">
-      <div className="left mb-5 md:hidden">
-        <img
-          src={JumbotronImage}
-          className="max-w-[1300px] md:w-[500px] md:ml-10 sm:max-w-80"
-        />
+    <div className="container bg-primary h-screen max-w-md text-white mx-auto flex items-center p-8 sm:max-w-lg md:max-w-5xl lg:max-w-full">
+      <div className="hidden md:flex items-center">
+        <div className="hidden lg:block flex-initial">
+          <img src={JumbotronImage} alt="Laravel Cake" className="w-[1300px]" />
+        </div>
+        <div className="hidden lg:block w-[90%]">
+          <div className="text-6xl font-semibold">
+            <h1>
+              Delicious{" "}
+              <span className="text-secondary font-bold">Dessert,</span>
+            </h1>
+            <h1>
+              Perfected with{" "}
+              <span className="text-secondary font-bold">Laravel</span>
+            </h1>
+          </div>
+          <p className="text-lg my-5">
+            "Explore delectable sweets at Laravel Cake, where every donut,
+            brownie, and ice cream is crafted to perfection with the seamless
+            precision of Laravel, creating a unique bakery experience."
+          </p>
+          <div className="flex gap-x-5 font-bold">
+            <a href="#" className="text-xl block bg-primary text-white border-2 border-white px-5 py-3 rounded-full">
+              Order Now!
+            </a>
+            <a href="#" className="text-xl block bg-white text-primary border-2 px-5 py-3 rounded-full">
+              Explore More{" "}
+              <span>
+                <FaArrowRight className="inline-block ml-3" />
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="right bg-primary pr-10  font-bold md:flex md:flex-col md:p-10">
-        <div className="text-5xl md:text-4xl md:text-center">
-          <h1 className="">
-            Delicious <span className="text-secondary">Desserts,</span>
-          </h1>
-          <h1 className="">
-            Perfected with <span className="text-secondary">Laravel.</span>
-          </h1>
-        </div>
 
-        <div className="my-5 -md:hidden md:pl-10">
-          <img src={JumbotronImage} className="" />
+      <div className="lg:hidden">
+        <div className="flex justify-center mb-3">
+          <img src={JumbotronImage} alt="Laravel Cake" className="" />
         </div>
-        <p className="my-5 text-lg  md:text-center md:text-base">
+        <div className="text-2xl font-bold sm:text-center mb-3 md:text-4xl">
+          <h1>
+            Delicious <span className="text-secondary">Dessert,</span>
+          </h1>
+          <h1>
+            Perfected with <span className="text-secondary">Laravel</span>
+          </h1>
+        </div>
+        <p className="text-sm sm:text-center mb-3 md:text-base">
           "Explore delectable sweets at Laravel Cake, where every donut,
           brownie, and ice cream is crafted to perfection with the seamless
           precision of Laravel, creating a unique bakery experience."
         </p>
-        <div className="text-xl md:text-lg md:text-center md:flex md:justify-center sm:flex-col sm:w-[75%] sm:mx-auto sm:gap-y-5">
-          <button className="mr-10 border-4 p-3 sm:w-full rounded-full hover:bg-white hover:border-white hover:text-primary duration-300 ease-in-out">
+        <div className="w-44 text-center mx-auto sm:w-96">
+          <a
+            href="#"
+            className="text-lg bg-primary block mr-5 border-2 px-3 py-1 rounded-full mb-3 w-full sm:w-fit sm:inline-block"
+          >
             Order Now
-          </button>
-          <button className="bg-white text-primary p-4 sm:w-full rounded-full hover:bg-secondary hover:border-secondary hover:text-white duration-300 ease-in-out">
-            Explore More
+          </a>
+          <a
+            href="#"
+            className="text-lg bg-white block text-primary border-2 px-3 py-1 rounded-full w-full sm:w-fit sm:inline-block"
+          >
+            Explore More{" "}
             <span>
-              <FaArrowRight className="inline-block ml-3" />
+              <FaArrowRight className="inline-block" />
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>
