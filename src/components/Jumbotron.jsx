@@ -11,11 +11,11 @@ const Jumbotron = () => {
         <div className="hidden lg:block w-[90%]">
           <div className="text-6xl font-semibold">
             <h1>
-              Delicious{" "}
+              Delicious
               <span className="text-secondary font-bold">Dessert,</span>
             </h1>
             <h1>
-              Perfected with{" "}
+              Perfected with
               <span className="text-secondary font-bold">Laravel</span>
             </h1>
           </div>
@@ -29,7 +29,7 @@ const Jumbotron = () => {
               Order Now!
             </a>
             <a href="#" className="text-xl block bg-white text-primary border-2 px-5 py-3 rounded-full">
-              Explore More{" "}
+              Explore More
               <span>
                 <FaArrowRight className="inline-block ml-3" />
               </span>
