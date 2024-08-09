@@ -21,15 +21,15 @@ const Header = () => {
           Sign Up
         </button>
       </div>
-      <div className="bg-red-700 my-auto -md:hidden">
+      <div className="my-auto -md:hidden">
         <GiHamburgerMenu />
       </div>
-      <ul className="font-bold -md:hidden gap-x-10 absolute top-0 right-0 bg-slate-300 p-3 w-60">
+      {/* <ul className="font-bold -md:hidden gap-x-10 absolute top-0 right-0 bg-slate-300 p-3 w-60">
         <li>Home</li>
         <li>Menu</li>
         <li>Promo</li>
         <li>Kontak</li>
-      </ul>
+      </ul> */}
     </div>
   );
 };
