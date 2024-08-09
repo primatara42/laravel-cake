@@ -8,7 +8,7 @@ const App = () => {
     <div className="font-Inter">
       {/* <Header /> */}
       <Jumbotron />
-      {/* <FavoriteMenuSection/> */}
+      <FavoriteMenuSection/>
     </div>
   );
 };
