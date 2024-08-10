@@ -12,11 +12,11 @@ const Jumbotron = () => {
           <div className="text-6xl font-semibold">
             <h1>
               Delicious
-              <span className="text-secondary font-bold">Dessert,</span>
+              <span className="text-secondary font-bold"> Dessert,</span>
             </h1>
             <h1>
               Perfected with
-              <span className="text-secondary font-bold">Laravel</span>
+              <span className="text-secondary font-bold"> Laravel</span>
             </h1>
           </div>
           <p className="text-lg my-5">
@@ -25,10 +25,16 @@ const Jumbotron = () => {
             precision of Laravel, creating a unique bakery experience."
           </p>
           <div className="flex gap-x-5 font-bold">
-            <a href="#" className="text-xl block bg-primary text-white border-2 border-white px-5 py-3 rounded-full">
+            <a
+              href="#"
+              className="text-xl block bg-primary text-white border-2 border-white px-5 py-3 rounded-full"
+            >
               Order Now!
             </a>
-            <a href="#" className="text-xl block bg-white text-primary border-2 px-5 py-3 rounded-full">
+            <a
+              href="#"
+              className="text-xl block bg-white text-primary border-2 px-5 py-3 rounded-full"
+            >
               Explore More
               <span>
                 <FaArrowRight className="inline-block ml-3" />
