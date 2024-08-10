@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 import FavoriteMenuSection from "./components/FavoriteMenuSection";
+import MenuSelections from "./components/MenuSelections";
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       {/* <Header /> */}
       <Jumbotron />
       <FavoriteMenuSection/>
+      <MenuSelections/>
     </div>
   );
 };
