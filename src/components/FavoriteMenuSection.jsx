@@ -1,5 +1,5 @@
 import React from "react";
-import FavoriteMenu from "../assets/images/cheesecakeSpeculoos.jpg";
+import { FavoriteMenu } from "./AllImages";
 
 const FavoriteMenuSection = () => {
   return (

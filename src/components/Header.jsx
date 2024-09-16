@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderLogo from "../assets/icons/laravel-icon.png";
+import { HeaderLogo } from "./AllImages";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {

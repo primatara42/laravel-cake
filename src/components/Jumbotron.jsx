@@ -1,6 +1,7 @@
 import React from "react";
-import JumbotronImage from "../assets/images/jumbotron_image(1).png";
+// import JumbotronImage from "../assets/images/jumbotron_image(1).png";
 import { FaArrowRight } from "react-icons/fa";
+import { JumbotronImage } from "./AllImages";
 const Jumbotron = () => {
   return (
     <div className="container bg-primary h-screen max-w-md text-white mx-auto flex items-center p-8 sm:max-w-lg md:max-w-5xl lg:max-w-full">
