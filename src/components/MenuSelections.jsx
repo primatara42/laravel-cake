@@ -22,7 +22,16 @@ function MenuSelections() {
           </select>
         </div>
       </div>
-      <div className="card_container flex flex-wrap justify-between gap-y-10 gap-x-5">
+      <div className="card_container flex flex-wrap justify-evenly gap-y-10 gap-x-5">
+        <div className="card bg-white p-5 rounded-xl shadow-xl font-semibold sm:max-w-72">
+            <img src={FavoriteMenu} className="w-24 h-24 object-cover rounded-full mb-3 sm:w-36 sm:h-36"/>
+            <h2 className="text-base sm:text-lg">Cheesecake Speculoos</h2>
+            <p className="font-normal text-sm text-justify mb-3 sm:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus repudiandae reiciendis, rerum magnam expedita.</p>
+        <div className="text-primary text-base sm:text-lg flex justify-between items-center">
+            <p>Rp 25.000</p>
+            <button className="bg-white border-primary border-2 rounded-full p-2">Add to Cart</button>
+        </div>
+        </div>
         <div className="card bg-white p-5 rounded-xl shadow-xl font-semibold sm:max-w-72">
             <img src={FavoriteMenu} className="w-24 h-24 object-cover rounded-full mb-3 sm:w-36 sm:h-36"/>
             <h2 className="text-base sm:text-lg">Cheesecake Speculoos</h2>
