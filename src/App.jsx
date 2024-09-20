@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Jumbotron from "./components/Jumbotron";
 import FavoriteMenuSection from "./components/FavoriteMenuSection";
@@ -8,11 +8,11 @@ import WhyChooseUs from "./components/WhyChooseUs";
 const App = () => {
   return (
     <div className="font-Inter">
-      {/* <Header /> */}
+      <Header />
       <Jumbotron />
-      <FavoriteMenuSection/>
-      <MenuSelections/>
-      <WhyChooseUs/>
+      <FavoriteMenuSection />
+      <MenuSelections />
+      <WhyChooseUs />
     </div>
   );
 };

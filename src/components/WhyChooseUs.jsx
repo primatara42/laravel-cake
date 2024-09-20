@@ -43,12 +43,17 @@ const WhyChooseUs = () => {
         WHY <span className="text-primary">CHOOSE US</span>
       </h1>
 
-      <div className="why_choose_us">
+      <div>
+        
+      </div>
+
+
+      <div className="why_choose_us desktop-screen">
         {benefits.map((benefit, index) => (
           // Card for upper tablet screen
           <div
             id={index}
-            className={`flex items-center gap-x-10 justify-between ${
+            className={`hidden lg:flex items-center gap-x-10 mb-24 justify-between ${
               index % 2 !== 0 ? "flex-row" : "flex-row-reverse"
             }`}
           >
@@ -59,7 +64,11 @@ const WhyChooseUs = () => {
               <p>{benefit.description}</p>
             </div>
             <div className="">
-              <img src={benefit.image} alt={benefit.title} className="w-96" />
+              <img
+                src={benefit.image}
+                alt={benefit.title}
+                className="max-w-[500px]"
+              />
             </div>
           </div>
         ))}
@@ -68,4 +77,4 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default WhyChooseUs;
