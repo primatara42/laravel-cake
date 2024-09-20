@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { JumbotronImage } from "./AllImages";
 const Jumbotron = () => {
   return (
-    <div className="container bg-primary max-w-md text-white mx-auto flex items-center p-8 sm:max-w-lg md:max-w-5xl lg:max-w-full">
+    <div className="container bg-primary max-w-md text-white mx-auto flex items-center p-8 sm:max-w-lg md:max-w-5xl lg:max-w-full lg:h-screen lg:pt-0">
       <div className="hidden md:flex items-center">
         <div className="hidden lg:block flex-initial">
           <img src={JumbotronImage} alt="Laravel Cake" className="w-[1300px]" />
