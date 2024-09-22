@@ -43,34 +43,40 @@ const WhyChooseUs = () => {
         WHY <span className="text-primary">CHOOSE US</span>
       </h1>
 
-      <div>
-        
-      </div>
-
-
-      <div className="why_choose_us desktop-screen">
+      <div className="why_choose_us">
         {benefits.map((benefit, index) => (
-          // Card for upper tablet screen
-          <div
-            id={index}
-            className={`hidden lg:flex items-center gap-x-10 mb-24 justify-between ${
-              index % 2 !== 0 ? "flex-row" : "flex-row-reverse"
-            }`}
-          >
-            <div>
-              <h2 className="text-secondary text-xl font-bold mb-5 md:text-3xl">
-                {whyUsTitleFormat(benefit.title)}
-              </h2>
-              <p>{benefit.description}</p>
+          <>
+            {/* Card for mobile screen */}
+            <div id={index} className="lg:hidden mt-10 bg-white pb-5 rounded-xl">
+              <div>
+                <img src={benefit.image} alt={benefit.title} className="rounded-t-xl" />
+              </div>
+              <div className="p-5">
+              <h2 className="mb-3 text-secondary font-bold text-center text-base sm:text-lg">
+                  {benefit.title}
+                </h2>
+                <p className="text-sm text-justify mb-3 sm:text-base">{benefit.description}</p>
+              </div>
             </div>
-            <div className="">
-              <img
-                src={benefit.image}
-                alt={benefit.title}
-                className="max-w-[500px]"
-              />
+
+            {/* Card for laptop screen */}
+            <div
+              id={index}
+              className={`hidden lg:flex items-center gap-x-10 justify-between ${
+                index % 2 !== 0 ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
+              <div>
+                <h2 className="text-secondary text-xl font-bold mb-5 md:text-3xl">
+                  {whyUsTitleFormat(benefit.title)}
+                </h2>
+                <p>{benefit.description}</p>
+              </div>
+              <div className="">
+                <img src={benefit.image} alt={benefit.title} className="w-96" />
+              </div>
             </div>
-          </div>
+          </>
         ))}
       </div>
     </div>
