@@ -4,18 +4,18 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center bg-primary text-white py-3 px-5 text-lg md:text-base w-full sticky top-0 sm:px-10">
+    <div className="flex justify-between items-center bg-primary text-white py-1 px-3 text-lg md:text-base w-full sticky top-0 sm:px-10 sm:py-3">
       <div className="flex items-center gap-x-3">
         <div>
-          <img src={HeaderLogo} alt="" className="w-10"/>
+          <img src={HeaderLogo} alt="" className="w-7"/>
         </div>
         <div className="text-center">
-          <h1 className="text-xl font-semibold">Laravel</h1>
-          <h1 className="text-base font-extralight">Cake</h1>
+          <h1 className="text-base font-semibold sm:text-xl">Laravel</h1>
+          <h1 className="text-sm font-extralight sm:text-lg">Cake</h1>
         </div>
       </div>
 
-      <ul className="hidden items-center justify-around font-bold gap-x-16 md:flex">
+      <ul className="hidden items-center justify-around font-bold gap-x-16 text-base md:flex">
         <li>Home</li>
         <li>Menu</li>
         <li>Promo</li>
