@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
             {/* Card for laptop screen */}
             <div
               id={index}
-              className={`hidden lg:flex items-center gap-x-10 justify-between ${
+              className={`hidden lg:flex items-center gap-x-10 mb-10 justify-between ${
                 index % 2 !== 0 ? "flex-row-reverse" : "flex-row"
               }`}
             >
@@ -72,8 +72,8 @@ const WhyChooseUs = () => {
                 </h2>
                 <p>{benefit.description}</p>
               </div>
-              <div className="">
-                <img src={benefit.image} alt={benefit.title} className="w-96" />
+              <div>
+                <img src={benefit.image} alt={benefit.title} className="w-96 rounded-lg" />
               </div>
             </div>
           </>
